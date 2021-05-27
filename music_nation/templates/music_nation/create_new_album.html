@@ -10,7 +10,7 @@
     <h2 style="margin:30px;">Add new album here.</h2>
     <form method="POST" enctype="multipart/form-data">{# this field is important for file upload #}
       {% csrf_token %}
-      {{form|crispy}}
+      {{ form|crispy }}
       <button type="submit" class="save btn btn-success">Save</button>
     </form>
   </div>
